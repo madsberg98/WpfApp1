@@ -7,5 +7,6 @@ namespace WpfApp1.UI.ViewModels
 {
     internal class QuizViewModels
     {
+
     }
 }
