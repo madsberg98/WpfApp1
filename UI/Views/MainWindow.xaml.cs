@@ -8,6 +8,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using UCL.QuizApp.Core;
+using WpfApp1.Core.Repositories;
+using WpfApp1.UI.ViewModels;
 
 namespace WpfApp1
 {
@@ -19,6 +22,9 @@ namespace WpfApp1
         public MainWindow()
         {
             InitializeComponent();
+            IQuestionRepository repo = new FileQuestionRepository();
+
+            DataContext = new QuizViewModel(repo);
         }
     }
 }

@@ -7,14 +7,25 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <TextBlock  Text="{Binding CurrentQuestion.QuestionText}"  HorizontalAlignment="Left" Margin="51,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="88" Width="323"/>
-        <TextBlock  Text="{Binding CurrentScore}" HorizontalAlignment="Left" Margin="51,195,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Height="89" Width="323"/>
-        <TextBlock  Text ="{Binding StatusMessage}" HorizontalAlignment="Left" Margin="51,336,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Height="50" Width="284"/>
-        <RadioButton Command="{Binding AnswerCommand}" CommandParameter="{Binding SvarIndex}" Content="RadioButton" HorizontalAlignment="Left" Margin="467,0,0,0" VerticalAlignment="Center"/>
-        <RadioButton Command="{Binding AnswerCommand}" CommandParameter="{Binding SvarIndex}" Content="RadioButton" HorizontalAlignment="Left" Margin="467,240,0,0" VerticalAlignment="Top"/>
-        <RadioButton Command="{Binding AnswerCommand}" CommandParameter="{Binding SvarIndex}" Content="RadioButton" HorizontalAlignment="Left" Margin="467,272,0,0" VerticalAlignment="Top"/>
-        <RadioButton Command="{Binding AnswerCommand}" CommandParameter="{Binding SvarIndex}" Content="RadioButton" HorizontalAlignment="Left" Margin="467,183,0,0" VerticalAlignment="Top"/>
+        <TextBlock  Text="{Binding CurrentQuestion.QuestionText}"  HorizontalAlignment="Left" Margin="51,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="53" Width="243"/>
+        <TextBlock  Text="{Binding CurrentScore}" HorizontalAlignment="Left" Margin="44,0,0,0" TextWrapping="Wrap"  VerticalAlignment="Center" Height="68" Width="244"/>
+        <TextBlock  Text ="{Binding StatusMessage}" HorizontalAlignment="Left" Margin="44,294,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Height="44" Width="244"/>
+        <RadioButton Command="{Binding AnswerCommand}" CommandParameter="{Binding SvarIndex}" Content="RadioButton" HorizontalAlignment="Left" Margin="363,263,0,0" VerticalAlignment="Top"/>
+        <RadioButton Command="{Binding AnswerCommand}" CommandParameter="{Binding SvarIndex}" Content="RadioButton" HorizontalAlignment="Left" Margin="363,293,0,0" VerticalAlignment="Top"/>
+        <RadioButton Command="{Binding AnswerCommand}" CommandParameter="{Binding SvarIndex}" Content="RadioButton" HorizontalAlignment="Left" Margin="363,325,0,0" VerticalAlignment="Top"/>
+        <RadioButton Command="{Binding AnswerCommand}" CommandParameter="{Binding SvarIndex}" Content="RadioButton" HorizontalAlignment="Left" Margin="363,236,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+            <RadioButton.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="0"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="0"/>
+                </TransformGroup>
+            </RadioButton.RenderTransform>
+        </RadioButton>
         <ProgressBar Value="{Binding ProgressValue}"  HorizontalAlignment="Left" Height="33" Margin="467,96,0,0" VerticalAlignment="Top" Width="265"/>
+       
+        
 
     </Grid>
 </Window>
