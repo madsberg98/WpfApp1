@@ -11,7 +11,7 @@ using System.Windows.Shapes;
 using UCL.QuizApp.Core;
 using WpfApp1.Core.Repositories;
 using WpfApp1.UI.ViewModels;
-
+using Window.resources = WpfApp1.UI.Reso
 namespace WpfApp1
 {
     /// <summary>
