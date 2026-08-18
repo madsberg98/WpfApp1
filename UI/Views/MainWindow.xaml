@@ -7,6 +7,14 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <TextBlock  Text="{Binding CurrentQuestion.QuestionText}"  HorizontalAlignment="Left" Margin="51,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="88" Width="323"/>
+        <TextBlock  Text="{Binding CurrentScore}" HorizontalAlignment="Left" Margin="51,195,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Height="89" Width="323"/>
+        <TextBlock  Text ="{Binding StatusMessage}" HorizontalAlignment="Left" Margin="51,336,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Height="50" Width="284"/>
+        <RadioButton Command="{Binding AnswerCommand}" CommandParameter="{Binding SvarIndex}" Content="RadioButton" HorizontalAlignment="Left" Margin="467,0,0,0" VerticalAlignment="Center"/>
+        <RadioButton Command="{Binding AnswerCommand}" CommandParameter="{Binding SvarIndex}" Content="RadioButton" HorizontalAlignment="Left" Margin="467,240,0,0" VerticalAlignment="Top"/>
+        <RadioButton Command="{Binding AnswerCommand}" CommandParameter="{Binding SvarIndex}" Content="RadioButton" HorizontalAlignment="Left" Margin="467,272,0,0" VerticalAlignment="Top"/>
+        <RadioButton Command="{Binding AnswerCommand}" CommandParameter="{Binding SvarIndex}" Content="RadioButton" HorizontalAlignment="Left" Margin="467,183,0,0" VerticalAlignment="Top"/>
+        <ProgressBar Value="{Binding ProgressValue}"  HorizontalAlignment="Left" Height="33" Margin="467,96,0,0" VerticalAlignment="Top" Width="265"/>
 
     </Grid>
 </Window>

@@ -1,7 +1,7 @@
 ﻿using System.IO;
 using System.Diagnostics;
 using WpfApp1.Core.Repositories;
-
+using WpfApp1;
 namespace UCL.QuizApp.Core
 {
     public class FileQuestionRepository : IQuestionRepository
@@ -46,7 +46,7 @@ namespace UCL.QuizApp.Core
         }
         public void Add(Question question)
         {
-            List<Question> all = GetAll();
+            IEnumerable<Question> all = GetAll();
             int maxId = 0;
             foreach (Question q in all)
             {
